@@ -30,7 +30,7 @@
             padding: 4px;
             margin: auto;
         }
-        option{
+        .listComun div{
             padding: 3px;
             text-align: center;
             margin: auto;
@@ -44,7 +44,7 @@
         #entrega{
             border: none;
             border-bottom: 1px solid;
-            width: 175px;
+            width: 185px;
             outline: none;
         }
         .left{

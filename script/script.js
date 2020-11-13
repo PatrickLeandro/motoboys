@@ -63,11 +63,12 @@ switch (fullDate) {
 document.getElementById('diaria').innerHTML = `Diária: &nbspR$${diaria},00`;
 document.getElementById('totalEntregas').innerHTML= `Total da noite R$${diaria},00`
 
-function teste() {
-    let item = document.createElement('option')
-    item.text = entrega.value
-    listEntregas.appendChild(item)
-    entrega.value = ''
+
+
+function adicionar() {
+    
+    listEntregas.innerHTML += `<div> ${entrega.value}</div>`
+    entrega.value = '';
     entregas++;
     total = entregas * 2 + diaria;
     document.getElementById('numEntregas').innerHTML=`Número de entregas feitas: ${entregas} - Valor R$${entregas*2},00`
