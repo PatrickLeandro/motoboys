@@ -27,7 +27,6 @@ function testefoto() {
     }
 }
 
-
 switch (fullDate) {
     case 0:
         diaria = 60;
