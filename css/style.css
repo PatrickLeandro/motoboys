@@ -1,0 +1,114 @@
+
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            text-align: center;
+            align-items: center;
+            border: 1px solid;
+            width: 300px;
+            margin: auto;
+            padding: 20px;
+            
+        }
+        .listComun{
+            width: 275px;
+            height: 85px;
+            border: none;
+            outline: none;
+            overflow: hidden;
+            padding: 4px;
+            margin: auto;
+        }
+        .listTaxa{
+            width: 275px;
+            height: 35px;
+            border: none;
+            outline: none;
+            overflow: hidden;
+            padding: 4px;
+            margin: auto;
+        }
+        option{
+            padding: 3px;
+            text-align: center;
+            margin: auto;
+            margin-top: 3px;
+            margin-right: 3px;
+            border: 1px solid;
+            width: 22px;
+            float: left;
+
+        }
+        #entrega{
+            border: none;
+            border-bottom: 1px solid;
+            width: 175px;
+            outline: none;
+        }
+        .left{
+            float: left;
+        }
+        .right{
+            float: right;
+        }
+        .form30{
+            width: 50%;
+            padding: 5px;
+        }
+        .form50{
+            width: 50%;
+            height: 100px;
+            padding: 10px;
+        }
+        .motoca{
+            border: none;
+            border-bottom: 1px solid;
+            width: 70px;
+            outline: none;
+            margin-top: 15px;
+
+        }
+        .animated-word {
+            font-family: Helvetica;
+            font-weight: 600;
+            font-size: 15px;
+            text-align: center;
+            color: #202125;
+            cursor: pointer;
+            width: 70px; 
+            outline: 3px solid;
+            outline-color: rgba(71, 126, 232,0.5);
+            outline-offset: 6px;
+            transition: all 800ms cubic-bezier(0.2, 0, 0, 0.8);
+        }
+
+        .animated-word:hover {
+            color: rgba(71, 126, 232, 0.7);
+            outline-color: rgba(71, 126, 232, 0);
+            outline-offset: 300px;
+        }
+        .cabecalho{
+            width: 100%;
+            margin-bottom: 10px;
+            display: flex;
+
+        }
+        .content{
+            display: flex;
+            margin-top: 20px;
+        }
+        img{
+            width: 120px;
+            border-radius: 50%;
+        }
+        .vila{
+            width: 170px;
+        }
+        #taxa{
+            width: 50px;
+        }
+
+
+        
