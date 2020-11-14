@@ -6,10 +6,10 @@
         .container{
             text-align: center;
             align-items: center;
-            border: 1px solid;
-            width: 300px;
+            max-width: 350px;
+            width: 100%;
             margin: auto;
-            padding: 20px;
+            padding: 10px;
             
         }
         .listComun{
@@ -67,7 +67,7 @@
             border-bottom: 1px solid;
             width: 70px;
             outline: none;
-            margin-top: 15px;
+            margin-top: 10px;
 
         }
         .animated-word {

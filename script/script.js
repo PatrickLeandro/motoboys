@@ -22,7 +22,7 @@ function testefoto() {
             break;
     
         default:
-            document.getElementById('foto').src='download-removebg-preview.png'
+            document.getElementById('foto').src='imagens/download-removebg-preview.png'
             break;
     }
 }
