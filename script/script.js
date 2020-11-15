@@ -4,12 +4,16 @@ const fullDate = date.getDay();
 var diaria = 0;
 var listEntregas = document.getElementById('listEntregas');
 var entrega = document.getElementById('entrega');
+var taxa = document.getElementById('taxa');
 var entregas = 0;
 var total = 0;
 var motoca = document.getElementById('motoca');
 document.getElementById('dia').innerHTML = day[fullDate];
 var contador = 0;
 var alterarDiaria = 0;
+var taxaInteira = 0;
+var qtdInteiras = 0;
+var valorInteiras = 0;
 
 function trocafoto() {
     contador++;
@@ -67,6 +71,8 @@ function diariaMotoca() {
     switch (fullDate) {
         case 0:
             diaria = 60;
+            document.getElementById('diaria').innerHTML = `Diária: &nbspR$${diaria},00`;
+            document.getElementById('totalEntregas').innerHTML= `Total da noite R$${diaria},00`
             break;
     
         case 1:
@@ -114,11 +120,23 @@ function diariaMotoca() {
 
 
 function adicionar() {
-    
     listEntregas.innerHTML += `<div> ${entrega.value}</div>`
     entrega.value = '';
     entregas++;
-    total = entregas * 2 + diaria;
-    document.getElementById('numEntregas').innerHTML=`Número de entregas feitas: ${entregas} - Valor R$${entregas*2},00`
+    total = entregas * 2 + diaria + valorInteiras;
+    document.getElementById('numEntregas').innerHTML=`Entregas comuns ${entregas} - Valor R$${entregas*2},00 <br>
+    Entregas inteiras: ${qtdInteiras} - Valor R$${valorInteiras}`
     document.getElementById('totalEntregas').innerHTML= `Total da noite R$${total},00`
+}
+
+function addTaxaInteira() {
+    listEntregas.innerHTML += `<div class="taxaInteira"> ${taxa.value}</div>`
+    qtdInteiras++;
+    taxaInteira = document.querySelector('input[name="taxa"]:checked').value;
+    valorInteiras = valorInteiras + Number(taxaInteira);
+    total = entregas * 2 + diaria + valorInteiras;
+    document.getElementById('numEntregas').innerHTML=`Entregas comuns ${entregas} - Valor R$${entregas*2},00 <br>
+    Entregas inteiras: ${qtdInteiras} - Valor R$${valorInteiras}`
+    document.getElementById('totalEntregas').innerHTML= `Total da noite R$${total},00`
+    
 }

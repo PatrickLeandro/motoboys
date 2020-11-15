@@ -44,10 +44,13 @@
             float: left;
 
         }
+        div.taxaInteira{
+            border: 1px solid rgb(150, 10, 10);
+        }
         #entrega{
             border: none;
             border-bottom: 1px solid;
-            width: 135px;
+            width: 120px;
             outline: none;
         }
         .left{
@@ -58,6 +61,7 @@
         }
         .form30{
             width: 30%;
+            text-align: end;
         }
         .form50{
             width: 50%;
@@ -103,9 +107,18 @@
             width: 170px;
         }
         #taxa{
-            width: 72px;
+            width: 120px;
             border: none;
             border-bottom: 1px solid;
+            margin-bottom: 10px;
+        }
+        .btn{
+            border: 1px solid rgb(93, 93, 194);
+            background-color: white;
+            padding: 7px;
+            border-radius: 5px;
+
+
         }
 
 
