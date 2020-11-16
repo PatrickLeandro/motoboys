@@ -41,24 +41,34 @@ function mudarDiaria() {
     switch (alterarDiaria) {
         case 1:
             diaria = 35;
+            total = entregas * 2 + diaria + valorInteiras;
             document.getElementById('diaria').innerHTML = `Diária: &nbspR$${diaria},00`;
-            document.getElementById('totalEntregas').innerHTML= `Total da noite R$${diaria},00`        
+            document.getElementById('totalEntregas').innerHTML= `Total da noite R$${total},00`        
             break;
         case 2:
-            diaria = 50;
+            diaria = 40;
+            total = entregas * 2 + diaria + valorInteiras;
             document.getElementById('diaria').innerHTML = `Diária: &nbspR$${diaria},00`;
-            document.getElementById('totalEntregas').innerHTML= `Total da noite R$${diaria},00`
+            document.getElementById('totalEntregas').innerHTML= `Total da noite R$${total},00`
         break
         case 3:
-            diaria = 55;
+            diaria = 50;
+            total = entregas * 2 + diaria + valorInteiras;
             document.getElementById('diaria').innerHTML = `Diária: &nbspR$${diaria},00`;
-            document.getElementById('totalEntregas').innerHTML= `Total da noite R$${diaria},00`
+            document.getElementById('totalEntregas').innerHTML= `Total da noite R$${total},00`
+        break
+        case 4:
+            diaria = 55;
+            total = entregas * 2 + diaria + valorInteiras;
+            document.getElementById('diaria').innerHTML = `Diária: &nbspR$${diaria},00`;
+            document.getElementById('totalEntregas').innerHTML= `Total da noite R$${total},00`
         break
         default:
             diaria = 60;
             alterarDiaria = 0;
+            total = entregas * 2 + diaria + valorInteiras;
             document.getElementById('diaria').innerHTML = `Diária: &nbspR$${diaria},00`;
-            document.getElementById('totalEntregas').innerHTML= `Total da noite R$${diaria},00`
+            document.getElementById('totalEntregas').innerHTML= `Total da noite R$${total},00`
             break;
     }
 
@@ -76,7 +86,7 @@ function diariaMotoca() {
             break;
     
         case 1:
-            diaria = 'Pizzaria fechada';           
+            diaria = 00;           
             document.getElementById('diaria').innerHTML = `Diária: &nbspR$${diaria},00`;
             document.getElementById('totalEntregas').innerHTML= `Total da noite R$${diaria},00`
             break;
@@ -132,7 +142,8 @@ function adicionar() {
 function addTaxaInteira() {
     listEntregas.innerHTML += `<div class="taxaInteira"> ${taxa.value}</div>`
     qtdInteiras++;
-    taxaInteira = document.querySelector('input[name="taxa"]:checked').value;
+    var select = document.getElementById('taxasInteiras');
+    taxaInteira = select.options[select.selectedIndex].value;
     valorInteiras = valorInteiras + Number(taxaInteira);
     total = entregas * 2 + diaria + valorInteiras;
     document.getElementById('numEntregas').innerHTML=`Entregas comuns ${entregas} - Valor R$${entregas*2},00 <br>

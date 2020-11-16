@@ -45,7 +45,7 @@
 
         }
         div.taxaInteira{
-            border: 1px solid rgb(150, 10, 10);
+            border: 1px solid rgb(192, 25, 25);
         }
         #entrega{
             border: none;
@@ -61,13 +61,17 @@
         }
         .form30{
             width: 30%;
-            text-align: end;
         }
         .form50{
             width: 50%;
         }
         .form70{
             width: 70%;
+
+        }
+        
+        select{
+            padding: 4px;
         }
         
         .animated-word {
