@@ -13,7 +13,6 @@
             padding-right: 25px;
             border: 1px solid;
             margin-top: 30px;
-            
         }
         .listComun{
             width: 275px;
@@ -69,11 +68,9 @@
             width: 70%;
 
         }
-        
         select{
             padding: 4px;
         }
-        
         .animated-word {
             font-family: Helvetica;
             font-weight: 600;
@@ -87,7 +84,6 @@
             outline-offset: 6px;
             transition: all 800ms cubic-bezier(0.2, 0, 0, 0.8);
         }
-
         .animated-word:hover {
             color: rgba(71, 126, 232, 0.7);
             outline-color: rgba(71, 126, 232, 0);
@@ -122,8 +118,6 @@
             background-color: white;
             padding: 7px;
             border-radius: 5px;
-
-
         }
 
 

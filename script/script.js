@@ -70,10 +70,7 @@ function mudarDiaria() {
             document.getElementById('diaria').innerHTML = `Diária: &nbspR$${diaria},00`;
             document.getElementById('totalEntregas').innerHTML= `Total da noite R$${total},00`
             break;
-    }
-
-    
-    
+    } 
 }
 
 function diariaMotoca() {
@@ -126,9 +123,6 @@ function diariaMotoca() {
     }
 }
 
-
-
-
 function adicionar() {
     listEntregas.innerHTML += `<div> ${entrega.value}</div>`
     entrega.value = '';
@@ -149,6 +143,5 @@ function addTaxaInteira() {
     document.getElementById('numEntregas').innerHTML=`Entregas comuns ${entregas} - Valor R$${entregas*2},00 <br>
     Entregas inteiras: ${qtdInteiras} - Valor R$${valorInteiras}`
     document.getElementById('totalEntregas').innerHTML= `Total da noite R$${total},00`
-    taxa.value = '';
-    
+    taxa.value = '';    
 }
