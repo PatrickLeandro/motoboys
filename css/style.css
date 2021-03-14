@@ -1,4 +1,10 @@
 
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            align-self: center;
+        }
         *{
             padding: 0;
             margin: 0;
@@ -6,17 +12,15 @@
         .container{
             text-align: center;
             align-items: center;
-            max-width: 350px;
-            width: 100%;
-            margin: auto;
             padding: 10px;
             padding-right: 25px;
-            border: 1px solid;
             margin-top: 30px;
+            display: inline-block;
+
         }
         .listComun{
-            width: 275px;
-            height: 85px;
+            max-width: 400px;
+            min-height: 120px;
             border: none;
             outline: none;
             overflow: hidden;
@@ -31,6 +35,7 @@
             overflow: hidden;
             padding: 4px;
             margin: auto;
+            background-color: red;
         }
         .listComun div{
             padding: 3px;
@@ -39,7 +44,6 @@
             margin-top: 3px;
             margin-right: 3px;
             border: 1px solid;
-            width: 22px;
             float: left;
 
         }
