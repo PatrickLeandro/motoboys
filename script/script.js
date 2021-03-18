@@ -41,50 +41,50 @@ function mudarDiaria() {
     switch (alterarDiaria) {
         case 1:
             diaria = 35;
-            total = entregas * 2 + diaria + valorInteiras;
+            total = entregas * 3 + diaria + valorInteiras;
             document.getElementById('diaria').innerHTML = `Diária: &nbspR$${diaria},00`;
             document.getElementById('totalEntregas').innerHTML= `Total da noite R$${total},00`        
             break;
         case 2:
             diaria = 40;
-            total = entregas * 2 + diaria + valorInteiras;
+            total = entregas * 3 + diaria + valorInteiras;
             document.getElementById('diaria').innerHTML = `Diária: &nbspR$${diaria},00`;
             document.getElementById('totalEntregas').innerHTML= `Total da noite R$${total},00`
         break
         case 3:
             diaria = 45;
-            total = entregas * 2 + diaria + valorInteiras;
+            total = entregas * 3 + diaria + valorInteiras;
             document.getElementById('diaria').innerHTML = `Diária: &nbspR$${diaria},00`;
             document.getElementById('totalEntregas').innerHTML= `Total da noite R$${total},00`
         break
         case 4:
             diaria = 50;
-            total = entregas * 2 + diaria + valorInteiras;
+            total = entregas * 3 + diaria + valorInteiras;
             document.getElementById('diaria').innerHTML = `Diária: &nbspR$${diaria},00`;
             document.getElementById('totalEntregas').innerHTML= `Total da noite R$${total},00`
         break
         case 5:
             diaria = 55;
-            total = entregas * 2 + diaria + valorInteiras;
+            total = entregas * 3 + diaria + valorInteiras;
             document.getElementById('diaria').innerHTML = `Diária: &nbspR$${diaria},00`;
             document.getElementById('totalEntregas').innerHTML= `Total da noite R$${total},00`
         break
         case 6:
             diaria = 60;
-            total = entregas * 2 + diaria + valorInteiras;
+            total = entregas * 3 + diaria + valorInteiras;
             document.getElementById('diaria').innerHTML = `Diária: &nbspR$${diaria},00`;
             document.getElementById('totalEntregas').innerHTML= `Total da noite R$${total},00`
         break
         case 7:
             diaria = 65;
-            total = entregas * 2 + diaria + valorInteiras;
+            total = entregas * 3 + diaria + valorInteiras;
             document.getElementById('diaria').innerHTML = `Diária: &nbspR$${diaria},00`;
             document.getElementById('totalEntregas').innerHTML= `Total da noite R$${total},00`
         break
         default:
             diaria = 70;
             alterarDiaria = 0;
-            total = entregas * 2 + diaria + valorInteiras;
+            total = entregas * 3 + diaria + valorInteiras;
             document.getElementById('diaria').innerHTML = `Diária: &nbspR$${diaria},00`;
             document.getElementById('totalEntregas').innerHTML= `Total da noite R$${total},00`
             break;
@@ -145,8 +145,8 @@ function adicionar() {
     listEntregas.innerHTML += `<div> ${entrega.value}</div>`
     entrega.value = '';
     entregas++;
-    total = entregas * 2 + diaria + valorInteiras;
-    document.getElementById('numEntregas').innerHTML=`Entregas comuns ${entregas} - Valor R$${entregas*2},00 <br>
+    total = entregas * 3 + diaria + valorInteiras;
+    document.getElementById('numEntregas').innerHTML=`Entregas comuns ${entregas} - Valor R$${entregas*3},00 <br>
     Entregas inteiras: ${qtdInteiras} - Valor R$${valorInteiras}`
     document.getElementById('totalEntregas').innerHTML= `Total da noite R$${total},00`
 }
@@ -162,8 +162,8 @@ function addTaxaInteira() {
     let mostradorDaTaxa = Number(taxaInteira);
     listEntregas.innerHTML += `<div class="taxaInteira">${taxa.value}  - R$${mostradorDaTaxa}</div>`
     
-    total = entregas * 2 + diaria + valorInteiras;
-    document.getElementById('numEntregas').innerHTML=`Entregas comuns ${entregas} - Valor R$${entregas*2},00 <br>
+    total = entregas * 3 + diaria + valorInteiras;
+    document.getElementById('numEntregas').innerHTML=`Entregas comuns ${entregas} - Valor R$${entregas*3},00 <br>
     Entregas inteiras: ${qtdInteiras} - Valor R$${valorInteiras}`
     document.getElementById('totalEntregas').innerHTML= `Total da noite R$${total},00`
     taxa.value = '';    
